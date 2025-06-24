@@ -1,38 +1,78 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* FORM TÌM KIẾM */
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #3498db;
   color: white;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* THẺ HIỂN THỊ THỜI TIẾT */
+.weather-card {
+  margin-top: 30px;
+  background: #f0f0f0;
+  display: inline-block;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 280px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.spinner {
+  margin-top: 30px;
+  width: 40px;
+  height: 40px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+/* LỖI */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE CHO MOBILE */
+@media (max-width: 600px) {
+  .search-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input,
+  button {
+    width: 90%;
+    max-width: 300px;
   }
 }
