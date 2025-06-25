@@ -4,12 +4,6 @@ This is a simple and responsive weather forecast app built with **React** and **
 
 ---
 
-## 📸 Demo Preview
-
-![Screenshot](https://via.placeholder.com/800x400.png?text=Weather+App+UI)
-
----
-
 ## 🚀 Features
 
 - 🔍 Search for weather by city name
